@@ -17,7 +17,7 @@ paths:
       tags:
       - LEGENDARYCLASSIFY
       description: Returns if a pokemon is legendary based on the input
-      operationId: legendaryPokemon.classify
+      operationId: virtualService.classify
       parameters:
       - name: id
         in: path
