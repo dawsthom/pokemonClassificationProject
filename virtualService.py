@@ -10,5 +10,5 @@ savedModel = load('pkmnClassifierModel.pkl')
 def classify(id):
     inputData = np.array(id)
     inputDataReshaped = inputData.reshape(1, -1)
-    prediction = savedModel.predict(inputDataReshaped)
+    prediction = savedModel.predict(inputDataReshaped).tolist()
     return prediction
